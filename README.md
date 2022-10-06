@@ -5,10 +5,13 @@
 Es una empresa que diseña y crea productos personalizados de fibrofacil a solicitudes de los clientes. Está ubicada en la ciudad autónoma de Buenos Aires y cuenta con una propuesta artística interesante y variedad en técnicas de pinturas.
 
 
+
 ### *INTEGRANTES DEL GRUPO*:
 
-**MOISÉS TEJADA**: ESTUDIANTE INTERESADO EN APRENDER A PROGRAMAR. //
+**MOISÉS TEJADA**: ESTUDIANTE INTERESADO EN APRENDER A PROGRAMAR.
+
 **CÉSAR SOLARES**: ESTUDIANTE EN ACTUALIZAR LOS LENGUAJES DE PROGRAMACION.
+
 
 ### *REFERENTES DEL MERCADO*:
 
