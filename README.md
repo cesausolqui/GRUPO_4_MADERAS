@@ -30,6 +30,7 @@ Es una empresa que diseña y crea productos personalizados de fibrofacil a solic
 >Empresa de artística integral dedicados a la venta de productos en fibrofácil y para el artesano. Ofrece asesoramiento profesional al cliente para que pueda decidir por el producto que mejor se adapte a su idea.
 
 5. **_ARTEFIBRO_**: https://artefibro.com.ar/ (BLOG DE IDEAS)
+>
 Además de ser tienda online en fibrofacil, contiene una sección de ideas con opiniones, reseñas, instructivos o tutoriales.
  
 
