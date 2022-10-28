@@ -4,6 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// CREA CARPETA /public
+
+const path = require('path'); // UNE DIRECTORIOS
+
+app.set('views', path.resolve(__dirname, 'views')); 
+
+app.use(express.static(path.resolve(__dirname, '../public')));
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -38,11 +46,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// CREA CARPETA /public
 
-const path = require('path'); // UNE DIRECTORIOS
-
-app.set('views', path.resolve(__dirname, 'views')); 
-
-app.use(express.static(path.resolve(__dirname, '../public')));
 module.exports = app;
