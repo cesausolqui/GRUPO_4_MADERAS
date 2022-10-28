@@ -38,4 +38,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// CREA CARPETA /public
+
+const path = require('path'); // UNE DIRECTORIOS
+
+app.set('views', path.resolve(__dirname, 'views')); 
+
+app.use(express.static(path.resolve(__dirname, '../public')));
 module.exports = app;
