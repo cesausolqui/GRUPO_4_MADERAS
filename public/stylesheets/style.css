@@ -1,0 +1,129 @@
+/*Importar fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color:beige;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+        "header" 100px
+        "navbar" 50px
+        "main" auto
+        "sidebar" 100px
+        "footer" 100px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    padding: 10px;
+    grid-auto-flow: dense;
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: #85aedd;
+    text-align: right;
+}
+
+.menu {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #afd6af;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fdcfcf;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ffffff;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #8c96a0;
+}
+
+/*Media Queries*/
+@media (min-width: 600px) {
+    .grid-container {
+        /* grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; */
+
+        grid-template:
+            "header  header" 100px
+            "navbar  navbar" 50px
+            "sidebar main" auto
+            "footer  footer" 100px /
+            200px auto;
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template:
+            "header  header header" 100px
+            "navbar  main   sidebar" auto
+            "footer  footer footer" 100px /
+            200px auto 200px;
+    }
+}
