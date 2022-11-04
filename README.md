@@ -1,4 +1,4 @@
-# MADERAS
+# MADERAS & ARTE https://github.com/cesausolqui/GRUPO_4_MADERAS
 
 ### *TEMÁTICA DEL PROYECTO*:
 
@@ -31,8 +31,4 @@ Es una empresa que diseña y crea productos personalizados de fibrofacil a solic
 
 5. **_ARTEFIBRO_**: https://artefibro.com.ar/ (BLOG DE IDEAS)
 >Además de ser tienda online en fibrofacil, contiene una sección de ideas con opiniones, reseñas, instructivos o tutoriales.
-
-
-https://github.com/cesausolqui/GRUPO_4_MADERAS
-
 
