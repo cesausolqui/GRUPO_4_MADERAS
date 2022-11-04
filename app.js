@@ -1,14 +1,23 @@
 const express = require('express');
-const path = require('path'); // UNE DIRECTORIOS
 const app = express();
-const PORT = process.env.PORT || 3000; //variable dinamica de puerto
-const HOST = process.env.HOST || 'localhost';
+const path = require('path');
+const PORT = process.env.PORT || 3000;
 
+app.use(express.static(path.resolve(__dirname, 'public'))
+);
 
-app.set('views', path.resolve(__dirname, './views')); 
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/home.html'));
+});
 
-app.use(express.static(path.resolve(__dirname, './public')));
+app.get('/register', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/register.html'));
+});
 
-app.listen(PORT, ()=>{
-    console.log(`Server running at http://${HOST}:${PORT}/`);
+app.get('/login', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
+});
+
+app.listen(PORT, () => {
+    console.log('listening on http://localhost:3000');
 });
