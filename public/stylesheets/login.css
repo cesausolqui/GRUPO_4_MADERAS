@@ -1,110 +1,79 @@
-*{
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #ff823ad7;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(./bg-image.jpg);
+}
+
+a {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(227, 227, 227);
 }
 
-img {
-    width: 30%;
+p>a {
+    font-size: 16px;
 }
 
-h3 {
-    background-color: #f19822;
-    display:inline-block;
-    border-radius: 0.3em;
-    padding: 15px;
-    border: solid black 2px;
-}
-
-.contenedor-formulario {
-    border: solid 1px black;
-    width: 90%;
-    max-width: 600px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 0.5em;
-    transition-property: all;
-    transition-duration: 0.5s;
+h4 {
+    text-align: center;
+  }
+  
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
 }
 
-.contenedor-formulario:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-form {
-    margin: 100px;
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+    color: white;
 }
 
-.subname {
-    display: flex;
-    justify-content: left;
-    margin: 20px 0px;
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
 }
 
-.pass {
-    display: flex;
-    justify-content: left;
-    margin: 20px 0px;
+.form-register a {
+    color: white;
+    text-decoration: none;
 }
 
-input {
-    border-radius: 0.3em;
-    height: 30px;
-    background-color:rgba(227, 227, 227, 0.812);
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
     border: none;
-    padding: 10px;
-    transition: all 0.2s;
-    outline: none;
-}
-
-input:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-
-
-a button {
-    margin: 10%;
-    width: 80%;
-    background-color: rgb(30, 137, 141);
-    opacity: 0.5;
-    border-radius: 0.8em;
-    font-weight: bold;
-    padding: 10px;
-    border: solid 1px blue;
-    transition: all 0.2s;
-}
-
-a button:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-}
-
-
-@media (max-width: 425px) {
-    .form-group {
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0;
-    }
-
-    input {
-        width: 90%;
-    };
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
 }
