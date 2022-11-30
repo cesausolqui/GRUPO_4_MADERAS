@@ -1,50 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Titulo sitio web-->
-  <title>Maderas & Arte</title>
-  <!--Estilos css-->
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <!--Icono en la pestaña-->
-  <link rel="shortcut icon" href="/images/logo pestaña.ico" type="image/logo" />
-  <!--Iconos desde Font Awesome-->
-  <script src="https://kit.fontawesome.com/a70485d0b7.js" crossorigin="anonymous"></script>
-</head>
+
+<%- include('./partials/head') %>
 
 <body>
-  <header>
-  <!--div contenedor-->
-  <div class="container">
-    <!--nav bar-->
-    <div class="navbar">
-      <!--logo de la Empresa-->
-        <img src="/images/logo pestaña.ico" class="logo" alt="Logo">
-    <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Tienda</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-
-    <!--iconos header-->
-    <ul class="iconsnav">
-      <li><a href="/register.html"><i  class="fa-solid fa-id-card"></i></a>
-      </li>
-      <li><a href="/login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-      </li>
-      <li><a href="/productCart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
-      </li>
-    </ul>
-    <!--buscador-->
-    <div>
-      <input type="text" placeholder="Buscar productos... "> <span><a href="#"><i class="fa fa-search lupa"></i></a></span>
-    </div>
-    </div>
-    </div>
-</header>
+  <%- include('./partials/header') %>
 
 <main>
   <h1>PRODUCTOS DESTACADOS</h1>
