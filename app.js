@@ -21,21 +21,21 @@ app.use(express.static(path.resolve(__dirname, 'public'))
     // response.sendFile(path.resolve(__dirname, './views/index.html'));
 // });
 
-app.get('/register.html', (request, response) => {
-    response.sendFile(path.resolve(__dirname, './views/register.html'));
-});
+//app.get('/register.html', (request, response) => {
+//    response.sendFile(path.resolve(__dirname, './views/register.html'));
+// });
 
 //app.get('/login.ejs', (request, response) => {
 //    response.sendFile(path.resolve(__dirname, './views/login.html'));
 //});
 
-app.get('/productDetail.html', (request, response) => {
-    response.sendFile(path.resolve(__dirname, './views/productDetail.html'));
-});
+// app.get('/productDetail.html', (request, response) => {
+//    response.sendFile(path.resolve(__dirname, './views/productDetail.html'));
+//});
 
-app.get('/productCart.html', (request, response) => {
-    response.sendFile(path.resolve(__dirname, './views/productCard.html'));
-});
+//app.get('/productCart.html', (request, response) => {
+//    response.sendFile(path.resolve(__dirname, './views/productCard.html'));
+//});
 
 app.listen(PORT, () => {
     console.log('Aplicación corriendo en el puerto http://localhost:3000');
