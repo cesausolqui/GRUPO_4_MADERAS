@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "titulo": "Hello",
+      "description": "nombre de Hello de 10 cm de alto * 20 de ancho",
+      "price": "1500,00",
+      "currency": "$",
+      "image": "cartel.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Cajas",
+      "description": "nombre de Cajas de 10 cm de alto * 10 de amcho",
+      "price": "2000,00",
+      "currency": "S",
+      "image": "cajas.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Hola mundo",
+      "description": "nombre de 10 cm de alto * 20 de amcho",
+      "price": "1500,00",
+      "currency": "S",
+      "image": "fondo.jpg"
+    },
+]

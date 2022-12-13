@@ -1,42 +1,29 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride = require('method-override'); // paquete para usar PUT y Delete
 const PORT = process.env.PORT || 3000;
 
 const mainRoutes = require('./routes/mainRoutes');
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
 app.use('/', mainRoutes);
 
 const usersRoutes = require('./routes/usersRoutes');
-app.use('/users', usersRoutes);
+app.use('/', usersRoutes);
 
+// const productsRoutes = require('./routes/productsRoutes');
+// app.use('/', productsRoutes);
 
-app.use(express.static(path.resolve(__dirname, 'public'))
-);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-//Routes o rutas
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(methodOverride('_method'));
 
-// app.get('/', (request, response) => {
-    // response.sendFile(path.resolve(__dirname, './views/index.html'));
-// });
-
-//app.get('/register.html', (request, response) => {
-//    response.sendFile(path.resolve(__dirname, './views/register.html'));
-// });
-
-//app.get('/login.ejs', (request, response) => {
-//    response.sendFile(path.resolve(__dirname, './views/login.html'));
-//});
-
-// app.get('/productDetail.html', (request, response) => {
-//    response.sendFile(path.resolve(__dirname, './views/productDetail.html'));
-//});
-
-//app.get('/productCart.html', (request, response) => {
-//    response.sendFile(path.resolve(__dirname, './views/productCard.html'));
-//});
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 app.listen(PORT, () => {
     console.log('Aplicación corriendo en el puerto http://localhost:3000');
+
 });
